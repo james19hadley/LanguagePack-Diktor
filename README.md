@@ -1,6 +1,6 @@
 ### What is this?
 
-am APK addon for AnySoftKeyboard - Russian Diktor keyboard for Android  
+an APK addon for AnySoftKeyboard - Russian Diktor keyboard for Android  
 
 ### What is Diktor?
 
