@@ -1,3 +1,7 @@
+### What is this?
+
+am APK addon for AnySoftKeyboard - Russian Diktor keyboard for Android  
+
 ### What is Diktor?
 
 Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=readme-ov-file
@@ -93,3 +97,16 @@ Artifacts are copied to `add_ons_apks/debug|release/`.
 ## Credits & License
 - Original work by AnySoftKeyboard contributors. This fork: Diktor layouts + build modernization.
 - License: Apache‑2.0
+- This was vibe coded so its AI slop but hey it works haha
+
+---
+
+### По‑русски (кратко)
+Diktor, Диктор — русская раскладка клавиатуры для AnySoftKeyboard на Android. Это аддон (APK) с несколькими вариантами: базовая, компактная и с цифровым рядом. Поддерживает навигационные стрелки, быстрый переключатель раскладок и расширенные поп‑апы символов. Скачать APK можно в разделе Releases; работает с AnySoftKeyboard из F‑Droid или Google Play.
+
+
+### Keywords 
+(EN)
+AnySoftKeyboard, Diktor keyboard layout, Russian keyboard for Android, Android keyboard addon APK, Diktor APK, number row, navigation arrows, symbol popups, compact keyboard layout.
+
+(RU): раскладка клавиатуры Диктор, русская клавиатура Android, AnySoftKeyboard аддон, Diktor APK, альтернативная клавиатура, клавиатура с цифровым рядом.
