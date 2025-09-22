@@ -16,3 +16,10 @@ bin/
 .generated_pack_version
 
 language-packs-apk/
+add_ons_apks/
+Private_Play_Store.txt
+
+# signing keys (do not commit)
+*.keystore
+*.jks
+diktor-release.keystore

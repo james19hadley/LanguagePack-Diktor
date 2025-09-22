@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="10%p"
+    android:keyHeight="@integer/key_normal_height"
+    android:horizontalGap="0px">
+
+
+    <!-- Верхняя панель управления: 123!#(), ←, →, Other layout -->
+    <Row android:rowEdgeFlags="top" android:keyHeight="@dimen/diktor_row_top_height">
+       <Key android:codes="@integer/key_code_mode_symbols"
+           ask:isFunctional="true"
+           android:keyLabel="123!#()" ask:shiftedKeyLabel="123!#()"
+           android:keyWidth="25%p"
+           android:keyEdgeFlags="left"/>
+       <Key android:codes="@integer/key_code_arrow_left"
+           ask:isFunctional="true"
+           android:isRepeatable="true"
+           android:keyWidth="25%p"/>
+       <Key android:codes="@integer/key_code_arrow_right"
+           ask:isFunctional="true"
+           android:isRepeatable="true"
+           android:keyWidth="25%p"/>
+        <Key android:codes="@integer/key_code_keyboard_cycle_inside_mode"
+            ask:isFunctional="true"
+            ask:longPressCode="@integer/key_code_keyboard_reverse_cycle"
+            android:keyLabel="⟳" ask:shiftedKeyLabel="⟳"
+            android:keyWidth="25%p"
+            android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Второй ряд (AD01..AD12 по XKB: ц ь я , . з в к д ч ш щ) -->
+    <Row android:keyWidth="8.33%p" android:keyHeight="@dimen/diktor_row_letters1_height">
+        <Key android:codes="1094" android:keyLabel="ц" android:popupCharacters="" android:keyEdgeFlags="left"/>
+        <Key android:codes="1100" android:keyLabel="ь" android:popupCharacters="ъ"/>
+        <Key android:codes="1103" android:keyLabel="я" android:popupCharacters="ѣ"/>
+        <Key android:codes="44" android:keyLabel="," android:popupCharacters=";"/>
+        <Key android:codes="46" android:keyLabel="." android:popupCharacters=":…°–—"/>
+        <Key android:codes="1079" android:keyLabel="з" android:popupCharacters="$"/>
+        <Key android:codes="1074" android:keyLabel="в" android:popupCharacters="✓"/>
+        <Key android:codes="1082" android:keyLabel="к" android:popupCharacters="©®™"/>
+        <Key android:codes="1076" android:keyLabel="д" android:popupCharacters=""/>
+        <Key android:codes="1095" android:keyLabel="ч" android:popupCharacters=""/>
+        <Key android:codes="1096" android:keyLabel="ш" android:popupCharacters=""/>
+        <Key android:codes="1097" android:keyLabel="щ" android:popupCharacters="" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Домашний ряд (ACxx: у и е о а л н т с р й) -->
+    <Row android:keyWidth="9.09%p" android:keyHeight="@dimen/diktor_row_letters2_height">
+        <Key android:codes="1091" android:keyLabel="у" android:popupCharacters="" android:keyEdgeFlags="left"/>
+        <Key android:codes="1080" android:keyLabel="и" android:popupCharacters="ѝ"/>
+        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="ё€"/>
+        <Key android:codes="1086" android:keyLabel="о" android:popupCharacters="ø"/>
+        <Key android:codes="1072" android:keyLabel="а" android:popupCharacters="@"/>
+        <Key android:codes="1083" android:keyLabel="л" android:popupCharacters="£"/>
+        <Key android:codes="1085" android:keyLabel="н" android:popupCharacters="≠"/>
+        <Key android:codes="1090" android:keyLabel="т" android:popupCharacters=""/>
+        <Key android:codes="1089" android:keyLabel="с" android:popupCharacters="§"/>
+        <Key android:codes="1088" android:keyLabel="р" android:popupCharacters="₽"/>
+        <Key android:codes="1081" android:keyLabel="й" android:popupCharacters="" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Нижний ряд (ABxx: ф э х ы ю б м п г ж) -->
+    <Row android:keyWidth="8.4%p" android:keyHeight="@dimen/diktor_row_letters3_height">
+        <!-- Shift -->
+        <Key android:codes="@integer/key_code_shift"
+             android:isModifier="true" android:isSticky="true" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
+
+        <Key android:codes="1092" android:keyLabel="ф" android:popupCharacters="Φ"/>
+        <Key android:codes="1101" android:keyLabel="э" android:popupCharacters="´"/>
+        <Key android:codes="1093" android:keyLabel="х" android:popupCharacters="×"/>
+        <Key android:codes="1099" android:keyLabel="ы" android:popupCharacters=""/>
+        <Key android:codes="1102" android:keyLabel="ю" android:popupCharacters=""/>
+        <Key android:codes="1073" android:keyLabel="б" android:popupCharacters=""/>
+        <Key android:codes="1084" android:keyLabel="м" android:popupCharacters="µ"/>
+        <Key android:codes="1087" android:keyLabel="п" android:popupCharacters="π"/>
+        <Key android:codes="1075" android:keyLabel="г" android:popupCharacters="≥"/>
+        <Key android:codes="1078" android:keyLabel="ж" android:popupCharacters="()"/>
+
+        <!-- Backspace in letters row -->
+        <Key android:codes="@integer/key_code_delete" android:keyWidth="7%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+
+    <!-- Нижняя панель: смайлик (quick text), голос, пробел, точка, Enter под Backspace -->
+    <Row android:rowEdgeFlags="bottom" android:keyHeight="@dimen/diktor_row_bottom_height">
+        <Key ask:isFunctional="true"
+             android:codes="@integer/key_code_quick_text"
+             ask:longPressCode="@integer/key_code_quick_text_popup"
+             android:keyWidth="10%p"
+             android:keyEdgeFlags="left"/>
+
+        <Key ask:isFunctional="true"
+             android:codes="@integer/key_code_voice_input"
+             android:keyWidth="10%p"/>
+
+       <!-- Question mark key left to space -->
+       <Key ask:isFunctional="true"
+           android:codes="63"
+           android:keyLabel="?"
+           android:popupCharacters="!?¿‽.,;:…—–-_()[]{}'&quot;«»„”“‘’@#№$%^&amp;*+=±÷×/&#92;|~°©®™§¶‰∞≠≤≥≈"
+           android:keyWidth="10%p"/>
+
+        <Key ask:isFunctional="true"
+             android:codes="32"
+           android:keyWidth="40%p"/>
+
+    <Key ask:isFunctional="true"
+           android:codes="."
+           android:keyLabel="."
+           android:popupCharacters=",:;…°–—()'&quot;_"
+           android:keyWidth="15%p"/>
+
+        <Key ask:isFunctional="true"
+             android:codes="@integer/key_code_enter"
+             android:keyWidth="15%p"
+             android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

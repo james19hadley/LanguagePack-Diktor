@@ -1,0 +1,13 @@
+ext.shouldBePublished = true
+// Optional: override applicationId to your namespace to avoid any conflicts
+// ext.override_app_id = "com.yourorg.ask.languagepack.diktor"
+
+// Old note kept for reference; not used in this fork:
+// russian was released with a different keystore (provided by Sergii Pylypenko)
+// ext.override_release_key_alias = 'russian2'
+
+apply from: "$rootDir/gradle/pack_apk.gradle"
+
+dependencies {
+    implementation project(path: ':languages:diktor:pack')
+}

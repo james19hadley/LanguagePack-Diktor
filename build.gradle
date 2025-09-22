@@ -6,13 +6,12 @@ buildscript {
         mavenCentral()
         mavenLocal()
         maven { url "https://plugins.gradle.org/m2/" }
-        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
-        classpath 'net.evendanan.autoversion:gradle-plugin:0.2.2'
-
-        classpath 'com.github.triplet.gradle:play-publisher:2.4.2'
+        // Use modern Android Gradle Plugin compatible with Gradle 8/9
+        classpath 'com.android.tools.build:gradle:8.5.2'
+        // Play Publisher newer version; we only apply if needed to avoid build breakage on local builds
+        classpath 'com.github.triplet.gradle:play-publisher:3.9.1'
         //not compatible with gradle 6+
         //classpath 'com.novoda:bintray-release:0.9.1'
     }
@@ -58,7 +57,7 @@ tasks.register("copyAnySoftKeyboardBaseLib") {
     group "AnySoftKeyboard"
     description 'Copies several of base aars from this repo into AnySoftKeyboard local repo. Use -PanysoftkeyboardPath=[path/to/AnySoftKeyboard/]'
 
-    def libsToCopy = [':api', ':base', ':languages:english:pack']
+    def libsToCopy = [':api', ':base', ':languages:diktor:pack']
     def targets = ['external/api/libs', 'external/packs/libs', 'external/packs/libs']
     libsToCopy.forEach {
         dependsOn rootProject.findProject(it).tasks.named('assembleRelease')

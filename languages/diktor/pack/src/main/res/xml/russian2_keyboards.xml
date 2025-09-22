@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboards>
+    <!-- Dictionary attributes:
+     "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
+     "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
+     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
+     "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
+     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
+     -->
+
+    <Keyboard
+        defaultDictionaryLocale="ru"
+        description="Diktor layout"
+        iconResId="@drawable/ic_status_russian2"
+        id="c3e88d57-046d-40ed-b5da-4c1020472cfb"
+        index="1"
+        layoutResId="@xml/diktor_qwerty"
+        nameResId="@string/diktor_keyboard_name"
+        physicalKeyboardMappingResId="@xml/ru_physical" />
+
+    <!-- Compact variant -->
+    <Keyboard
+        defaultDictionaryLocale="ru"
+        description="Diktor compact height"
+        iconResId="@drawable/ic_status_russian2"
+        id="0d2c5bb7-1d8c-4a58-9a9c-7f3e960a9a63"
+        index="2"
+        layoutResId="@xml/diktor_qwerty_compact"
+        nameResId="@string/diktor_keyboard_name_compact"
+        physicalKeyboardMappingResId="@xml/ru_physical" />
+
+    <!-- Tall with numbers row variant -->
+    <Keyboard
+        defaultDictionaryLocale="ru"
+        description="Diktor tall with numbers row"
+        iconResId="@drawable/ic_status_russian2"
+        id="f7dc7aa4-5a1e-4a3c-8a15-0b3b1dbeb0f1"
+        index="3"
+        layoutResId="@xml/diktor_qwerty_tall_numbers"
+        nameResId="@string/diktor_keyboard_name_tall_numbers"
+        physicalKeyboardMappingResId="@xml/ru_physical" />
+
+    <!-- Normal height with numbers row variant -->
+    <Keyboard
+        defaultDictionaryLocale="ru"
+        description="Diktor normal with numbers row"
+        iconResId="@drawable/ic_status_russian2"
+        id="3c8a4ff8-89a1-4f7d-a2f0-98b33e06c7a9"
+        index="4"
+        layoutResId="@xml/diktor_qwerty_numbers"
+        nameResId="@string/diktor_keyboard_name_numbers"
+        physicalKeyboardMappingResId="@xml/ru_physical" />
+</Keyboards>

@@ -31,14 +31,29 @@ android {
         applicationId calculateApplicationId(project)
     }
 
-    applicationVariants.configureEach { variant ->
-        variant.outputs.all {
-            outputFileName = "add-on-${project.path.replace(':', '-')}-${rootProject.autoVersioning.versionData.versionCode}.apk"
+    applicationVariants.all { variant ->
+        def apkName = "add-on-${project.path.replace(':', '-')}-${rootProject.autoVersioning.versionData.versionCode}.apk"
+        variant.outputs.each { output ->
+            try {
+                output.outputFileName = apkName
+            } catch (Throwable ignored) {
+                // AGP API may differ; ignore if not supported
+            }
         }
         variant.assembleProvider.configure { assemble ->
             assemble.doLast {
+                def outFiles = []
+                try {
+                    outFiles = variant.outputs.collect { it.outputFile }
+                } catch (Throwable t) {
+                    // fallback: pick from intermediates/outputs
+                    def dir = file("${buildDir}/outputs/apk/${variant.name}")
+                    if (dir.exists()) {
+                        outFiles = dir.listFiles().findAll { it.name.endsWith('.apk') }
+                    }
+                }
                 copy {
-                    from variant.outputs*.outputFile
+                    from outFiles
                     into "${rootDir.absolutePath}/add_ons_apks/${variant.dirName}/"
                 }
             }
@@ -66,7 +81,7 @@ android {
             if (keystoreFile.exists()) {
                 signingConfig signingConfigs.release
             }
-            zipAlignEnabled true
+            // zipAlign runs as part of packaging in modern AGP
             debuggable false
             minifyEnabled false
         }
@@ -74,14 +89,14 @@ android {
 }
 
 if (project.ext.shouldBePublished) {
-    project.apply plugin: 'com.github.triplet.play'
-
-    play {
-        // you can promote from command-line by specifying the track to promote to:
-        // ./gradlew :languages:hebrew:apk:promoteReleaseArtifact -DpublishTrackOverride=beta
-        track = System.getProperty('publishTrackOverride', 'alpha')
-        serviceAccountEmail = System.getenv().getOrDefault('PUBLISH_APK_SERVICE_ACCOUNT_EMAIL', 'dummy@example.com')
-        serviceAccountCredentials = file('/tmp/apk_upload_key.p12')
+    try {
+        project.apply plugin: 'com.github.triplet.play'
+        play {
+            track = System.getProperty('publishTrackOverride', 'alpha')
+            serviceAccountCredentials.set(file('/tmp/apk_upload_key.json'))
+        }
+    } catch (Throwable t) {
+        logger.lifecycle("Play Publisher plugin not applied: ${t.message}. Continuing without publishing config.")
     }
 } else {
     println("Project ${path} is NOT marked for publishing")

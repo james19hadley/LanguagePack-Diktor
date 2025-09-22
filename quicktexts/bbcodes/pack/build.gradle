@@ -1,2 +1,0 @@
-
-apply from: "$rootDir/gradle/quicktext_pack_lib.gradle"

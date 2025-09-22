@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!--
+            Diktor per-row heights using dimensions for fine-grained control.
+            Notes:
+            - AnySoftKeyboard also supports integer sentinels (-1 normal, -2 short, -3 tall),
+                but integers cannot be fractional. To approximate a "-1.5" height we use a dp value
+                midway between normal (≈45dp) and tall (≈54dp) in the stock themes: 49.5dp.
+            - Adjust these to taste. You can also create size-qualified overrides (values-land, values-large, etc.).
+        -->
+        <dimen name="diktor_row_top_height">30dp</dimen>
+        <dimen name="diktor_row_letters1_height">45dp</dimen>
+        <dimen name="diktor_row_letters2_height">45dp</dimen>
+        <dimen name="diktor_row_letters3_height">45dp</dimen>
+        <dimen name="diktor_row_bottom_height">45dp</dimen>
+</resources>

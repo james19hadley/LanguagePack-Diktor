@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="10%p"
+    android:keyHeight="@integer/key_short_height"
+    android:horizontalGap="0px">
+
+    <!-- Top controls -->
+    <Row android:rowEdgeFlags="top" android:keyHeight="@integer/key_short_height">
+       <Key android:codes="@integer/key_code_mode_symbols" ask:isFunctional="true" android:keyLabel="123!#()" ask:shiftedKeyLabel="123!#()" android:keyWidth="25%p" android:keyEdgeFlags="left"/>
+    <Key android:codes="@integer/key_code_arrow_left" ask:isFunctional="true" android:isRepeatable="true" android:keyWidth="25%p"/>
+    <Key android:codes="@integer/key_code_arrow_right" ask:isFunctional="true" android:isRepeatable="true" android:keyWidth="25%p"/>
+    <Key android:codes="@integer/key_code_keyboard_cycle_inside_mode" ask:isFunctional="true" ask:longPressCode="@integer/key_code_keyboard_reverse_cycle" android:keyLabel="⟳" ask:shiftedKeyLabel="⟳" android:keyWidth="25%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Letters rows (copied from base, without popups for brevity) -->
+    <Row android:keyWidth="8.33%p" android:keyHeight="@integer/key_short_height">
+        <Key android:codes="1094" android:keyLabel="ц" android:keyEdgeFlags="left"/>
+        <Key android:codes="1100" android:keyLabel="ь"/>
+        <Key android:codes="1103" android:keyLabel="я"/>
+        <Key android:codes="44" android:keyLabel=","/>
+        <Key android:codes="46" android:keyLabel="."/>
+        <Key android:codes="1079" android:keyLabel="з"/>
+        <Key android:codes="1074" android:keyLabel="в"/>
+        <Key android:codes="1082" android:keyLabel="к"/>
+        <Key android:codes="1076" android:keyLabel="д"/>
+        <Key android:codes="1095" android:keyLabel="ч"/>
+        <Key android:codes="1096" android:keyLabel="ш"/>
+        <Key android:codes="1097" android:keyLabel="щ" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="9.09%p" android:keyHeight="@integer/key_short_height">
+        <Key android:codes="1091" android:keyLabel="у" android:keyEdgeFlags="left"/>
+        <Key android:codes="1080" android:keyLabel="и"/>
+        <Key android:codes="1077" android:keyLabel="е"/>
+        <Key android:codes="1086" android:keyLabel="о"/>
+        <Key android:codes="1072" android:keyLabel="а"/>
+        <Key android:codes="1083" android:keyLabel="л"/>
+        <Key android:codes="1085" android:keyLabel="н"/>
+        <Key android:codes="1090" android:keyLabel="т"/>
+        <Key android:codes="1089" android:keyLabel="с"/>
+        <Key android:codes="1088" android:keyLabel="р"/>
+        <Key android:codes="1081" android:keyLabel="й" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="8.6%p" android:keyHeight="@integer/key_short_height">
+        <Key android:codes="@integer/key_code_shift" android:isModifier="true" android:isSticky="true" android:keyWidth="6%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="1092" android:keyLabel="ф"/>
+        <Key android:codes="1101" android:keyLabel="э"/>
+        <Key android:codes="1093" android:keyLabel="х"/>
+        <Key android:codes="1099" android:keyLabel="ы"/>
+        <Key android:codes="1102" android:keyLabel="ю"/>
+        <Key android:codes="1073" android:keyLabel="б"/>
+        <Key android:codes="1084" android:keyLabel="м"/>
+        <Key android:codes="1087" android:keyLabel="п"/>
+        <Key android:codes="1075" android:keyLabel="г"/>
+        <Key android:codes="1078" android:keyLabel="ж"/>
+        <Key android:codes="@integer/key_code_delete" android:keyWidth="8%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom" android:keyHeight="@integer/key_short_height">
+        <Key ask:isFunctional="true" android:codes="@integer/key_code_quick_text" ask:longPressCode="@integer/key_code_quick_text_popup" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
+        <Key ask:isFunctional="true" android:codes="@integer/key_code_voice_input" android:keyWidth="10%p"/>
+        <Key ask:isFunctional="true" android:codes="63" android:keyLabel="?" android:popupCharacters="!?¿‽.,;:…—–-_()[]{}'&quot;«»„”“‘’@#№$%^&amp;*+=±÷×/&#92;|~°©®™§¶‰∞≠≤≥≈" android:keyWidth="10%p"/>
+        <Key ask:isFunctional="true" android:codes="32" android:keyWidth="40%p"/>
+        <Key ask:isFunctional="true" android:codes="." android:keyLabel="." android:popupCharacters=",:;…°–—()'&quot;_" android:keyWidth="15%p"/>
+        <Key ask:isFunctional="true" android:codes="@integer/key_code_enter" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
