@@ -1,6 +1,10 @@
 ### What is this?
 
 an APK addon for AnySoftKeyboard - Russian Diktor keyboard for Android  
+<p align="center">
+	<img src="docs/images/diktor_keys.jpg" alt="Diktor keys" width="400" />
+</p>
+
 
 ### What is Diktor?
 
@@ -14,9 +18,6 @@ Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=rea
 Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing like Dvorak. 
 
 Made this keyboard for Android because there was none.
-<p align="center">
-	<img src="docs/images/diktor_keys.jpg" alt="Diktor keys" width="400" />
-</p>
 
 ## Download & install
 
