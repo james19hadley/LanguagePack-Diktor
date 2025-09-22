@@ -11,12 +11,11 @@ Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=rea
   
 </p> -->
 
-Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing. 
+Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing like Dvorak. 
 
 Made this keyboard for Android because there was none.
 <p align="center">
 	<img src="docs/images/diktor_keys.jpg" alt="Diktor keys" width="400" />
-  
 </p>
 
 ## Download & install
@@ -72,6 +71,7 @@ This pack ships four variants:</strong></p>
     <li>Top control row with arrows and quick layout switch inside alphabet mode</li>
     <li>“?” key left of space with rich popups; curated symbol popups on letters</li>
     <li>Stable control labels; arrows repeat on long press</li>
+	<li>Btw you can change language by swiping on the space bar sideways</li>
 </ul>
 
 ---
