@@ -18,6 +18,7 @@ Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=rea
 Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing like Dvorak. 
 
 Made this keyboard for Android because there was none.
+upd. Nevermind this repo is irrelevant. There is a better option: https://github.com/florisboard/florisboard which has Diktor and much more.
 
 ## Download & install
 
