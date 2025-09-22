@@ -1,41 +1,19 @@
-## Diktor for AnySoftKeyboard
-
-Unofficial fork of AnySoftKeyboard/LanguagePack focused on one add‑on: Diktor (Russian) layouts.
-Build is modernized; only Diktor participates in Gradle includes. License: Apache‑2.0.
-
-Links:
-- AnySoftKeyboard (engine): https://github.com/AnySoftKeyboard/AnySoftKeyboard
-- Upstream (historical mono‑repo): https://github.com/AnySoftKeyboard/LanguagePack
-
 ### What is Diktor?
 
 Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=readme-ov-file
-
-![Diktor base](docs/images/diktor_layout.png)
+<!-- 
+<p align="center">
+	<img src="docs/images/diktor_layout.png" alt="Diktor base" width="600" />
+  
+</p> -->
 
 Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing. 
 
 Made this keyboard for Android because there was none.
-![Diktor keys](docs/images/diktor_keys.jpg)
-
-
-This pack ships four variants:
-![Diktor 4](docs/images/diktor_choice.jpg)
-- Diktor (base)
-- Diktor compact
-- Diktor tall + numbers row
-- Diktor normal + numbers row
-
-Common features:
-- Top control row with arrows and quick layout switch inside alphabet mode
-- “?” key left of space with rich popups; curated symbol popups on letters
-- Stable control labels; arrows repeat on long press
-
-
-It is recommended to disable animations because they are annoying when pressing keys:
-![Diktor tall numbers](docs/images/animatianimations_noneons_none.jpg)
-
----
+<p align="center">
+	<img src="docs/images/diktor_keys.jpg" alt="Diktor keys" width="400" />
+  
+</p>
 
 ## Download & install
 
@@ -43,10 +21,10 @@ Recommended: install AnySoftKeyboard (ASK for short) from F‑Droid, then instal
 
 1) Install ASK engine
 - F‑Droid: https://f-droid.org/packages/com.menny.android.anysoftkeyboard/
-- Play Store: https://play.google.com/store/apps/details?id=com.menny.android.anysoftkeyboard (F‑Droid is preferred for faster updates)
+- Play Store: https://play.google.com/store/apps/details?id=com.menny.android.anysoftkeyboard (F‑Droid is preferred)
 
 2) Install Diktor add‑on
-- Download the latest signed APK from this repo’s Releases
+- Download the latest signed APK from this repo’s Releases: https://github.com/james19hadley/LanguagePack-Diktor/releases
 - Open it on your device and confirm installation (enable “Unknown sources” if prompted)
 
 3) Enable in ASK
@@ -55,6 +33,42 @@ Recommended: install AnySoftKeyboard (ASK for short) from F‑Droid, then instal
 
 Troubleshooting
 - “App not installed / Conflicting signatures”: remove any previously installed Diktor add‑ons with the same package name before installing. If needed, uninstall via ADB: `adb uninstall com.anysoftkeyboard.languagepack.diktor` or find it in settings in apps list.
+
+---
+
+## Diktor for AnySoftKeyboard
+
+Unofficial fork of AnySoftKeyboard/LanguagePack focused on one add‑on: Diktor (Russian) layouts.
+
+Build is modernized; 
+
+only Diktor participates in Gradle includes.
+
+Links:
+- AnySoftKeyboard (engine): https://github.com/AnySoftKeyboard/AnySoftKeyboard
+- Upstream (historical mono‑repo): https://github.com/AnySoftKeyboard/LanguagePack
+
+
+This pack ships four variants:</strong></p>
+<ul>
+    <li>Diktor (base)</li>
+    <li>Diktor compact</li>
+    <li>Diktor tall + numbers row</li>
+    <li>Diktor normal + numbers row</li>
+</ul>
+
+<p>It is recommended to disable animations because they are annoying when pressing keys.</p>
+<div style="display: flex; gap: 16px;">
+    <img src="docs/images/diktor_choice.jpg" alt="Diktor variants" width="280" />
+    <img src="docs/images/animations_none.jpg" alt="Disable animations" width="280" />
+</div>
+
+<p><strong>Common features:</strong></p>
+<ul>
+    <li>Top control row with arrows and quick layout switch inside alphabet mode</li>
+    <li>“?” key left of space with rich popups; curated symbol popups on letters</li>
+    <li>Stable control labels; arrows repeat on long press</li>
+</ul>
 
 ---
 
@@ -76,27 +90,6 @@ Artifacts are copied to `add_ons_apks/debug|release/`.
 
 ---
 
-## FAQ (short)
-- Where to get ASK? Prefer F‑Droid; Play is OK but updates lag.
-- How to switch variants? ASK Settings → Languages → Keyboard selection; use the top‑row cycle key to switch between Diktor variants.
-- Is this a standalone app? No, it’s an add‑on APK for AnySoftKeyboard.
-
----
-
 ## Credits & License
 - Original work by AnySoftKeyboard contributors. This fork: Diktor layouts + build modernization.
 - License: Apache‑2.0
-
-```
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
