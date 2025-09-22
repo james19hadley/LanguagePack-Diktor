@@ -22,4 +22,4 @@ Private_Play_Store.txt
 # signing keys (do not commit)
 *.keystore
 *.jks
-diktor-release.keystorels -lt add_ons_apks/release/
+diktor-release.keystore
