@@ -8,20 +8,14 @@ an APK addon for AnySoftKeyboard - Russian Diktor keyboard for Android
 
 ### What is Diktor?
 
-Google + check this one out as well https://github.com/mshkrebtan/diktor?tab=readme-ov-file
-<!-- 
-<p align="center">
-	<img src="docs/images/diktor_layout.png" alt="Diktor base" width="600" />
-  
-</p> -->
-
 Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing like Dvorak. 
+
+Well, google it haha + check this one out as well https://github.com/mshkrebtan/diktor?tab=readme-ov-file
 
 Made this keyboard for Android because there was none.
 
 
-upd. found an app that has Diktor layout: https://github.com/florisboard/florisboard 
-However I find it a bit laggy and as on now it has no word suggestions so i'll use mine :)
+upd. found an app that has Diktor layout: https://github.com/florisboard/florisboard. However I find it a bit laggy and as of now it has no word suggestions and I like mine better so I'll use mine :)
 
 ## Download & install
 
