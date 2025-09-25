@@ -20,7 +20,8 @@ Diktor is a Russian keyboard layout family optimized for fast, ergonomic typing 
 Made this keyboard for Android because there was none.
 
 
-## upd. Nevermind this repo is irrelevant. There is a better option: https://github.com/florisboard/florisboard which has Diktor and much more.
+upd. found an app that has Diktor layout: https://github.com/florisboard/florisboard 
+However I find it a bit laggy and as on now it has no word suggestions so i'll use mine :)
 
 ## Download & install
 
