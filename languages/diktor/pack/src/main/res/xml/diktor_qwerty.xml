@@ -64,7 +64,7 @@
     <Row android:keyWidth="8.4%p" android:keyHeight="@dimen/diktor_row_letters3_height">
         <!-- Shift -->
         <Key android:codes="@integer/key_code_shift"
-             android:isModifier="true" android:isSticky="true" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
+             android:isModifier="true" android:isSticky="true" android:keyWidth="7%p" android:keyEdgeFlags="left"/>
 
         <Key android:codes="1092" android:keyLabel="ф" android:popupCharacters="Φ"/>
         <Key android:codes="1101" android:keyLabel="э" android:popupCharacters="´"/>
@@ -78,7 +78,7 @@
         <Key android:codes="1078" android:keyLabel="ж" android:popupCharacters="()"/>
 
         <!-- Backspace in letters row -->
-        <Key android:codes="@integer/key_code_delete" android:keyWidth="7%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+        <Key android:codes="@integer/key_code_delete" android:keyWidth="9%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 
     <!-- Нижняя панель: смайлик (quick text), голос, пробел, точка, Enter под Backspace -->

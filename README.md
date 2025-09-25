@@ -93,6 +93,15 @@ Artifacts are copied to `add_ons_apks/debug|release/`.
 
 ---
 
+## Build environment
+
+- Gradle (wrapper): 8.7
+- Android Gradle Plugin: 8.5.2
+- Android SDK: compileSdk 34, targetSdk 34, minSdk 21
+- Java: sourceCompatibility 1.8, targetCompatibility 1.8 (JDK 17+ recommended for running the build)
+
+---
+
 ## Credits & License
 - Original work by AnySoftKeyboard contributors. This fork: Diktor layouts + build modernization.
 - License: Apache‑2.0

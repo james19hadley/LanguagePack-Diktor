@@ -28,8 +28,8 @@ if (useAutoVersioning) {
 } else {
     ext.autoVersioning = [
         versionData: [
-            versionCode: 4000000,
-            versionName: '4.0.0-local'
+            versionCode: 4000001,
+            versionName: '4.0.1'
         ]
     ]
 }
